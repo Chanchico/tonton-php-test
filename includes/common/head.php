@@ -40,7 +40,7 @@
                 <a href="<?= DOMAIN ?>/a-propos">&Agrave; propos</a>
             </li>
             <li class="<?= ($segments[1] == 'blog') ? 'active' : '' ?>">
-                <a href="<?= DOMAIN ?>/blog">Blog</a>
+                <a href="<?= DOMAIN ?>/blog">Carte</a>
             </li>
             <li class="<?= ($uri == '/contact') ? 'active' : '' ?>">
                 <a href="<?= DOMAIN ?>/contact">Contact</a>

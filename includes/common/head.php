@@ -30,7 +30,7 @@
     </div>
     <nav>
         <div class="logo-nav">
-            <img src="<?= DOMAIN ?>/assets/media/images/logo-QS.png" alt="logo">
+            <img src="<?= DOMAIN ?>/assets/media/images/logo.png" alt="logo">
         </div>
         <ul>
             <li class="<?= ($uri == '/') ? 'active' : '' ?>">

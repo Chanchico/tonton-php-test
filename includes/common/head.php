@@ -8,13 +8,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="msapplication-tap-highlight" content="no">
     <?php if (!defined('MAINTENANCE') && !defined('ERROR_404')) { ?>
-    <title>Mon Site - <?= (ucfirst(str_replace('-', ' ', $segments[1])) ? ucfirst(str_replace('-', ' ', $segments[1])) : 'Accueil') ?></title>
+    <title>Banque alimentaire de gironde - <?= (ucfirst(str_replace('-', ' ', $segments[1])) ? ucfirst(str_replace('-', ' ', $segments[1])) : 'Accueil') ?></title>
     <?php } else if (defined('MAINTENANCE') && !defined('ERROR_404')) { ?>
     <title>Maintenance</title>
     <?php } else if (!defined('MAINTENANCE') && defined('ERROR_404')) { ?>
     <title>Erreur 404</title>
     <?php } ?>
-    <link rel="icon" href="<?= DOMAIN ?>/assets/media/images/logo-QS.png">
+    <link rel="icon" href="<?= DOMAIN ?>/assets/media/images/logo_head.png">
     <link rel="stylesheet" href="<?= DOMAIN ?>/assets/css/style.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
     <div id="burger-container">
         <p>Mon Site</p>
         <div id="burger">
-            <span class="burger-line"></span>
+            <span class="burger-line">Menu</span>
             <span class="burger-line"></span>
             <span class="burger-line"></span>
         </div>
@@ -44,6 +44,9 @@
             </li>
             <li class="<?= ($uri == '/contact') ? 'active' : '' ?>">
                 <a href="<?= DOMAIN ?>/contact">Contact</a>
+            </li>
+            <li class="<?= ($uri == '/connexion') ? 'active' : '' ?>">
+                <a href="<?= DOMAIN ?>/connexion">Connexion</a>
             </li>
         </ul>
     </nav>

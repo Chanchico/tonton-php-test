@@ -6,8 +6,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #191919;
-    color: #FFF;
+    background-color: white;
+    color: #000000;
 }
 
 section {
@@ -54,17 +54,17 @@ section {
 }
 
 .active a {
-    color: gold;
+    color: #ff7500;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px #ffffff;
     padding: 20px 30px;
     width: calc(100% - 60px);
-    background-color: #000;
+    background-color: #ffffff;
 }
 
 nav, nav ul {
@@ -90,14 +90,14 @@ nav ul {
 }
 
 .logo-nav {
-    width: 20%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .logo-nav img {
-    width: 100px;
+    width: 250px;
 }
 
 nav ul li {
@@ -265,7 +265,7 @@ textarea {
 }
 
 .title {
-    font-size: 26px;
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
     width: 100%;
@@ -297,22 +297,29 @@ textarea {
     height: 40vh;
 }
 
-#bloc1 {
-    background-color: #000;
+#accueilIMG{
+   width: 100%; 
 }
 
-#bloc2 {
-    background-color: #2D2D2D;
+#bloc1, #bloc2, #bloc3, #bloc4, #bloc5, #bloc6, #bloc7 {
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 5px;
+    margin: 20px ;
+    color: #ff7500
 }
 
-#bloc3 {
-    background-color: #000;
+#bloc4, #bloc7{
+    background-color: #ff7500;
 }
 
-#bloc1, #bloc2, #bloc3 {
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 20px 0;
+#bloc5, #bloc6{
+    background-color: #ffffff;
+}
+
+p{
+    size : 16px;
+    color: #000;
 }
 
 .bg-black {

@@ -7,7 +7,7 @@ if (!function_exists('connexion')) {
         $host = 'localhost';             //myHostAddress
         $dbuser = 'root';     //myUserName
         $dbpw = '';     //myPassword
-        $dbname = 'tonton';     //myDatabase
+        $dbname = 'banque alimentaire';     //myDatabase
 
         $pdoReqArg1 = "mysql:host=". $host .";dbname=". $dbname .";";
         $pdoReqArg2 = $dbuser;
@@ -470,5 +470,25 @@ if (!function_exists('recordCrud')) {
             }
 
         }
+    }
+}
+if (!function_exists('formatDate')) {
+
+    function formatDate($date)
+    {
+        $d = date("d-m-Y", strtotime($date));
+        $t = date("H\hi", strtotime($date));
+        return $d . ' à ' . $t;
+    }
+}
+if (!function_exists('getInformation')) {
+    function getInformation($uri)
+    {
+        $db = connexion();
+        $query = "SELECT * FROM information WHERE published = 1";
+        $stt = $db->prepare($query);
+        $stt->execute();
+        $information = $stt->fetchAll(\PDO::FETCH_ASSOC);
+        return $information;
     }
 }
